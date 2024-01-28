@@ -8,7 +8,7 @@ import { container, item } from "./animation/animationPattern";
 
 const LeftSection = () => {
   return (
-    <div className="relative flex flex-col justify-center items-center uppercase md:h-[100vh]">
+    <div className="md:relative flex flex-col gap-4 md:gap-0  justify-center items-center uppercase md:h-[100vh]">
       <motion.div
         variants={container}
         initial="hidden"
@@ -17,28 +17,31 @@ const LeftSection = () => {
       >
         <motion.h1
           whileHover={{ y: -5, color: "#E11D48" }}
+          whileTap={{ y: -5, color: "#E11D48" }}
           variants={item}
-          className="text-[30px] md:text-[44px] leading-[40px] md:leading-[52px] font-normal md:font-medium"
+          className="text-[30px] md:text-[44px] leading-[40px] md:leading-[52px] font-normal md:font-medium text-secondary-foreground"
         >
           Hello, I&apos;m
         </motion.h1>
         <motion.h1
           whileHover={{ y: -5, color: "#E11D48" }}
+          whileTap={{ y: -5, color: "#E11D48" }}
           variants={item}
-          className=" text-[30px] md:text-[44px] leading-[35px] md:leading-[52px] font-normal md:font-medium"
+          className=" text-[30px] md:text-[44px] leading-[35px] md:leading-[52px] font-normal md:font-medium text-secondary-foreground"
         >
           Roshan Pradhan.
         </motion.h1>
         <motion.h3
           variants={item}
           whileHover={{ y: -5, color: "#F2F2F2" }}
+          whileTap={{ y: -5, color: "#F2F2F2" }}
           className=" text-[26px] md:text-[32px] leading-[40px] md:leading-[52px] font-normal md:font-medium text-primary"
         >
           React Developer
         </motion.h3>
         <motion.p
           variants={item}
-          className="normal-case text-justify text-[#777777] text-[15px] leading-5 md:leading-6"
+          className="normal-case text-justify text-[#777777] text-[12px] md:text-[15px] leading-4 md:leading-6"
         >
           Don&apos;t be afraid to give up the good to go for the great. This
           philosophy drives my commitment to continuous improvement and pushing
@@ -46,15 +49,26 @@ const LeftSection = () => {
           development. I believe in delivering not just functional solutions,
           but experiences that leave a lasting impression.
         </motion.p>
-        <motion.div variants={item}>
+        <motion.div variants={item} className="pt-2 md:hidden">
           <Image
             src={signatureLogo}
             alt="Roshan Pradhan"
-            className=" bg-transparent py-3 w-[70%]"
+            width={140}
+            height={0}
+            className=" bg-transparent "
+          />
+        </motion.div>
+        <motion.div variants={item} className="pt-2 hidden md:flex">
+          <Image
+            src={signatureLogo}
+            alt="Roshan Pradhan"
+            width={250}
+            height={0}
+            className=" bg-transparent "
           />
         </motion.div>
       </motion.div>
-      <div className="flex flex-row justify-start items-center w-[80%] md:w-[60%] absolute bottom-5 gap-4">
+      <div className="flex flex-row justify-start items-center w-[80%] md:w-[60%] md:absolute md:bottom-5 gap-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}

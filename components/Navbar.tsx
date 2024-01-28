@@ -17,14 +17,14 @@ const Navbar = () => {
       </Avatar>
       <div
         className={cn(
-          "flex flex-col w-[250px] uppercase justify-center items-center  origin-center lg:-rotate-90"
+          "flex flex-col w-[250px] uppercase justify-center items-start md:items-center  origin-center lg:-rotate-90 "
         )}
       >
         <h2 className="text-sm tracking-[3px] font-medium">Roshan Pradhan</h2>
         <p className="text-xs text-[#777] tracking-widest">React Developer</p>
       </div>
       <div
-        className="cursor-pointer"
+        className="cursor-pointer hidden md:block"
         onClick={() => {
           toast({
             title: "Coming Soooooooooooooooooooooooon !!!!!",
