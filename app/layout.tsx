@@ -1,27 +1,27 @@
-import type { Metadata } from "next";
-import { Exo } from "next/font/google";
-import "./globals.css";
-import { cn } from "@/lib/utils";
-import { Toaster } from "@/components/ui/toaster";
-import { ThemeProvider } from "@/components/theme-provider";
-const oswald = Exo({ subsets: ["latin"] });
+import type { Metadata } from "next"
+import { Exo } from "next/font/google"
+import "./globals.css"
+import { cn } from "@/lib/utils"
+import { Toaster } from "@/components/ui/toaster"
+import { ThemeProvider } from "@/components/theme-provider"
+const oswald = Exo({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: {
-    default: "Roshan Pradhan",
-    template: "%s Roshan Pradhan",
+    default: "Subrat Regmi",
+    template: "%s Subrat Regmi",
   },
   description:
-    "Greetings, I'm Roshan Pradhan, a skilled website developer specialized in React.js. With a strong focus on problem-solving, I create dynamic, responsive and scalable web solutions.",
+    "Greetings, I'm Subrat Regmi, a skilled Automation Tester specialized in Cypress. With a strong focus on problem-solving, I tested dynamic, responsive and scalable web apps.",
   twitter: {
     card: "summary_large_image",
   },
-};
+}
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <html lang="en" className="h-full">
@@ -39,5 +39,5 @@ export default function RootLayout({
         </main>
       </body>
     </html>
-  );
+  )
 }

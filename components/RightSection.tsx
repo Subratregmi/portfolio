@@ -1,43 +1,43 @@
-"use client";
-import { Facebook, Instagram, Linkedin } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import React, { useEffect, useState } from "react";
-import { motion } from "framer-motion";
-import { container, item } from "./animation/animationPattern";
+"use client"
+import { Facebook, Instagram, Linkedin } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
+import React, { useEffect, useState } from "react"
+import { motion } from "framer-motion"
+import { container, item } from "./animation/animationPattern"
 
 interface UnsplashPhoto {
   urls: {
-    full?: string;
-  };
-  alt_description?: string;
+    full?: string
+  }
+  alt_description?: string
 }
 
 const socialLinks = [
   {
     id: 1,
-    link: "https://www.linkedin.com/in/roshan-pradhan56/",
+    link: "https://www.linkedin.com/in/subrat-regmi-526536263/",
     Icon: <Linkedin />,
   },
   {
     id: 0,
-    link: "https://www.facebook.com/roshan.pradhan.9619",
+    link: "https://www.facebook.com/subrat.regmi.3/",
     Icon: <Facebook />,
   },
   {
     id: 2,
-    link: "https://www.instagram.com/gts_roshan/",
+    link: "https://www.instagram.com/subrat_regmi/",
     Icon: <Instagram />,
   },
-];
+]
 
 const RightSection = () => {
-  const [random, setRandom] = useState<UnsplashPhoto | undefined>();
+  const [random, setRandom] = useState<UnsplashPhoto | undefined>()
 
   return (
     <div className="flex relative md:h-[100vh] justify-center">
       <Image
-        src={"/static/media/profile.jpg"}
+        src={"/static/media/profile1.jpg"}
         alt="profile"
         // fill={true}
         width={950}
@@ -72,7 +72,7 @@ const RightSection = () => {
         </motion.div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default RightSection;
+export default RightSection

@@ -1,10 +1,10 @@
-"use client";
-import Image from "next/image";
-import React from "react";
-import signatureLogo from "../app/assets/logo.png";
-import { MapPin } from "lucide-react";
-import { motion } from "framer-motion";
-import { container, item } from "./animation/animationPattern";
+"use client"
+import Image from "next/image"
+import React from "react"
+import signatureLogo from "../app/assets/cocosign (1).png"
+import { MapPin } from "lucide-react"
+import { motion } from "framer-motion"
+import { container, item } from "./animation/animationPattern"
 
 const LeftSection = () => {
   return (
@@ -29,7 +29,7 @@ const LeftSection = () => {
           variants={item}
           className=" text-[30px] md:text-[44px] leading-[35px] md:leading-[52px] font-normal md:font-medium text-secondary-foreground"
         >
-          Roshan Pradhan.
+          Subrat Regmi.
         </motion.h1>
         <motion.h3
           variants={item}
@@ -37,7 +37,7 @@ const LeftSection = () => {
           whileTap={{ y: -5, color: "#F2F2F2" }}
           className=" text-[26px] md:text-[32px] leading-[40px] md:leading-[52px] font-normal md:font-medium text-primary"
         >
-          React Developer
+          QA Automation Engineer
         </motion.h3>
         <motion.p
           variants={item}
@@ -45,14 +45,14 @@ const LeftSection = () => {
         >
           Don&apos;t be afraid to give up the good to go for the great. This
           philosophy drives my commitment to continuous improvement and pushing
-          the boundaries of what&apos;s possible in the realm of React
-          development. I believe in delivering not just functional solutions,
-          but experiences that leave a lasting impression.
+          the boundaries of what&apos;s possible in the realm of Automation
+          testing. I believe in delivering not just functional solutions, but
+          experiences that leave a lasting impression.
         </motion.p>
         <motion.div variants={item} className="pt-2 md:hidden">
           <Image
             src={signatureLogo}
-            alt="Roshan Pradhan"
+            alt="Subrat Regmi"
             width={140}
             height={0}
             className=" bg-transparent "
@@ -61,7 +61,7 @@ const LeftSection = () => {
         <motion.div variants={item} className="pt-2 hidden md:flex">
           <Image
             src={signatureLogo}
-            alt="Roshan Pradhan"
+            alt="Subrat Regmi"
             width={250}
             height={0}
             className=" bg-transparent "
@@ -89,7 +89,7 @@ const LeftSection = () => {
         </motion.div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default LeftSection;
+export default LeftSection

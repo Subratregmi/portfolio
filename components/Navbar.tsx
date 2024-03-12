@@ -1,9 +1,9 @@
-"use client";
-import React from "react";
-import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
-import { Menu } from "lucide-react";
-import { cn } from "@/lib/utils";
-import { toast } from "./ui/use-toast";
+"use client"
+import React from "react"
+import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar"
+import { Menu } from "lucide-react"
+import { cn } from "@/lib/utils"
+import { toast } from "./ui/use-toast"
 
 const Navbar = () => {
   return (
@@ -20,8 +20,10 @@ const Navbar = () => {
           "flex flex-col w-[250px] uppercase justify-center items-start md:items-center  origin-center lg:-rotate-90 "
         )}
       >
-        <h2 className="text-sm tracking-[3px] font-medium">Roshan Pradhan</h2>
-        <p className="text-xs text-[#777] tracking-widest">React Developer</p>
+        <h2 className="text-sm tracking-[3px] font-medium">Subrat Regmi</h2>
+        <p className="text-xs text-[#777] tracking-widest">
+          QA Automation Engineer
+        </p>
       </div>
       <div
         className="cursor-pointer hidden md:block"
@@ -29,13 +31,13 @@ const Navbar = () => {
           toast({
             title: "Coming Soooooooooooooooooooooooon !!!!!",
             duration: 1000,
-          });
+          })
         }}
       >
         <Menu className="text-primary" size={30} />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
