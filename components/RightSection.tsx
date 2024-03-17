@@ -37,19 +37,19 @@ const RightSection = () => {
   return (
     <div className="flex relative md:h-[100vh] justify-center">
       <Image
-        src={"/static/media/profile1.jpg"}
+        src={"/static/media/profile1.png"}
         alt="profile"
-        // fill={true}
         width={950}
         height={0}
         loading="eager"
         style={{
-          // objectFit: "cover",
-          objectPosition: "top left",
-          aspectRatio: 1 / 1,
           objectFit: "cover",
+          objectPosition: "top", // Adjust the object position as needed
+          aspectRatio: 1 / 1,
+          maxWidth: "100%", // Ensures the image doesn't overflow its container
         }}
       />
+
       <div className="absolute bottom-5 right-5">
         <motion.div
           variants={container}

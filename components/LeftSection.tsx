@@ -1,7 +1,7 @@
 "use client"
 import Image from "next/image"
 import React from "react"
-import signatureLogo from "../app/assets/cocosign (1).png"
+import signatureLogo from "../app/assets/subratlogo.png"
 import { MapPin } from "lucide-react"
 import { motion } from "framer-motion"
 import { container, item } from "./animation/animationPattern"
@@ -43,11 +43,11 @@ const LeftSection = () => {
           variants={item}
           className="normal-case text-justify text-[#777777] text-[12px] md:text-[15px] leading-4 md:leading-6"
         >
-          Don&apos;t be afraid to give up the good to go for the great. This
-          philosophy drives my commitment to continuous improvement and pushing
-          the boundaries of what&apos;s possible in the realm of Automation
-          testing. I believe in delivering not just functional solutions, but
-          experiences that leave a lasting impression.
+          I&apos;m passionate about building high-quality software through test
+          automation. With more than two years of experience, I excel at
+          creating efficient test scripts to ensure a smooth user experience. I
+          leverage my skills in test automation frameworks and scripting
+          languages to identify and resolve software defects.
         </motion.p>
         <motion.div variants={item} className="pt-2 md:hidden">
           <Image
